@@ -88,12 +88,11 @@ input {
     display:inline-block;
 }
 .spacer {
-    height:300px;
+    height:350px;
 }
 .scene {
     background-color: #101745;
     height:634px;
-    width:1000px;
     overflow:hidden;
     padding-left:0px;
 }
@@ -119,7 +118,7 @@ input {
 }
 .parallax__group {
     position: relative;
-    height: 80vh;
+    height: 500px;
     transform-style: preserve-3d;
 }
 .parallax__layer {
