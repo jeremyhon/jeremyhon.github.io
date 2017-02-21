@@ -18,8 +18,9 @@
             <div class="parallax__layer parallax__layer--back">
                 <div class="scene">
                     <ul id="scene">
-                        <li class="layer" data-depth="0.6"><div class="layer layer-1"></div></li>
-                        <li class="layer" data-depth="0"><div class="layer layer-0"></div></li>
+                        <li class="layer" data-depth="0.0"></li>
+                        <li class="layer" data-depth="0.0"><div class="layer layer-1"></div></li>
+                        <li class="layer" data-depth="0.1"><div class="layer layer-0"></div></li>
                     </ul>
                 </div>
             </div>
@@ -33,6 +34,7 @@
             </div>
         </div>
         <div class="parallax__group">
+          <div class="white">
             <div class="intro">
                 <img class="mugshot" src="assets/images/jeremyhon.png">
                 <div class="intro-title">
@@ -88,11 +90,12 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
     </div>
     <script>
         var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene, {originX:0.2, originY:0.0});
+        var parallax = new Parallax(scene);
     </script>
 </body>
 </html>

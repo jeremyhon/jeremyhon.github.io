@@ -68,6 +68,8 @@ input {
 .statement {
     text-align: center;
     color:#DDD;
+    padding: 10px;
+    font-size: 0.6em;
 }
 .intro {
     width:100vw;
@@ -86,12 +88,17 @@ input {
     display:inline-block;
 }
 .spacer {
-    height:550px;
+    height:300px;
 }
 .scene {
-    background-color: #020113;
+    background-color: #101745;
     height:634px;
+    width:1000px;
     overflow:hidden;
+    padding-left:0px;
+}
+.white {
+  background-color: white;
 }
 .layer {
     background-size: 100% 100%;
@@ -99,10 +106,10 @@ input {
     height:640px;
 }
 .layer-0 {
-    background-image: url("/jeremyhon.github.io/assets/images/nightfg2.png");
+  background-image: url("/assets/images/nightfgm.png");
 }
 .layer-1 {
-    background-image: url("/jeremyhon.github.io/assets/images/nightbg2.jpg");
+  background-image: url("/assets/images/nightbgm.jpg");
 }
 .parallax {
     perspective: 1px;
@@ -127,4 +134,18 @@ input {
 }
 .parallax__layer--back {
     transform: translateZ(-1px) translateY(-90px) scale(2.02);
+}
+@media (min-width:700px) {
+  .scene {
+    background-color: #020113;
+  }
+  .layer-0 {
+    background-image: url("/assets/images/nightfg2.png");
+  }
+  .layer-1 {
+    background-image: url("/assets/images/nightbg2.jpg");
+  }
+  .statement {
+    font-size: 1em;
+  }
 }
