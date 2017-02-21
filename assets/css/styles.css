@@ -6,6 +6,7 @@ p, span {
 }
 body {
     margin:0;
+    background-color: #222;
 }
 
 input {
@@ -16,10 +17,10 @@ input {
     display: inline-block;
     padding: 0.5em 0.5em 0.5em 2em;
     text-align: center;
-    color: #666;
+    color: #eee;
 }
 .toggle-label:hover {
-    color: #000;
+    color: #fff;
 }
 .toggle-label::before {
     font-family: Consolas, monaco, monospace;
@@ -31,13 +32,12 @@ input {
     width: 20px;
     height: 20px;
     margin-right: 3px;
-    background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+    background: radial-gradient(ellipse at center, #555 50%, transparent 50%);
 }
 .toggle-box {
     height: 0px;
     overflow: hidden;
     transition: height 0.5s;
-    background-color: #EEE;
 }
 .toggle:checked ~ .toggle-box {
     height: 250px;
@@ -68,16 +68,11 @@ input {
 .statement {
     text-align: center;
     color:#DDD;
-    padding: 10px;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 .intro {
-    width:100vw;
     padding:0.5em;
-    background-color:white;
-    color: #101010;
     text-align: center;
-    display:inline-block;
 }
 .mugshot {
     vertical-align:middle;
@@ -90,14 +85,9 @@ input {
 .spacer {
     height:350px;
 }
-.scene {
-    background-color: #101745;
-    height:634px;
-    overflow:hidden;
-    padding-left:0px;
-}
-.white {
-  background-color: white;
+.text-container {
+  color: #eee;
+  background-color:#222;
 }
 .layer {
     background-size: 100% 100%;
@@ -118,7 +108,7 @@ input {
 }
 .parallax__group {
     position: relative;
-    height: 500px;
+    height: 450px;
     transform-style: preserve-3d;
 }
 .parallax__layer {
@@ -129,15 +119,19 @@ input {
     left: 0;
 }
 .parallax__layer--base {
-    transform: translateZ(0);
+    transform: translateZ(-0.2px);
 }
 .parallax__layer--back {
     transform: translateZ(-1px) translateY(-90px) scale(2.02);
 }
+.fade {
+    height: 200px;
+    background: -webkit-linear-gradient(rgba(255,0,0,0), #222); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,0,0,0), #222); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,0,0,0), #222); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,0,0,0), #222); /* Standard syntax (must be last) */
+}
 @media (min-width:700px) {
-  .scene {
-    background-color: #020113;
-  }
   .layer-0 {
     background-image: url("/assets/images/nightfg2.png");
   }
